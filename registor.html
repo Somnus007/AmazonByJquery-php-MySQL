@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Amazon 注册</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="shortcut icon" href="img/amazon.ico">
+		<link rel="stylesheet" href="css/style.css" />
+
+	</head>
+
+	<body>
+		<div id="registor-logo">
+			<a href="index.html"></a>
+		</div>
+		<div id="registor-info">
+			<h3>创建账户</h3>
+			<form action="php/registor.php" method="post">
+				<p class="usernameBox">
+					<label for="username">您的用户名</label>
+					<input class="same" type="text" name="username" id="username" autocomplete="off" placeholder="3-15字符长度，支持汉字、字母、数字及_" />
+					<span></span>
+				</p>
+				<p class="telBox">
+					<label for="tel">手机号码</label>
+					<input class="same" type="text" name="tel" id="tel" autocomplete="off" placeholder="有效的11位手机号码" />
+					<span></span>
+				</p>
+				<p class="emailBox">
+					<label for="email">电子邮件地址</label>
+					<input class="same" type="text" name="email" id="email" autocomplete="off" placeholder="请输入有效的邮箱" />
+					<span></span>
+				</p>
+				<p class="passBox">
+					<label for="password">密码</label>
+					<input class="same" type="password" name="password" id="password" autocomplete="off" placeholder="至少6个字符" />
+					<span></span>
+				</p>
+				<p>
+					<label for="yan">请输入验证码</label>
+					<div class="yzm clear">
+						<input class="yan" type="text" name="yan" id="yan" autocomplete="off" />
+						<i class="yanzhengma"></i>
+						<strong>换一张</strong>
+					</div>
+					<span class="yanBox1" ></span>
+				</p>
+				<p class="check">
+					<b><input id="check" type="checkbox"/> 我已阅读并同意网站的<a href="#">使用条件</a>及<a href="#">隐私声明</a>。</b>
+					<span></span>
+				</p>
+				<p class="subBox">
+					<input class="sub" type="submit" value="继续" name="submit" />
+					<span class="subText"></span>
+				</p>
+			</form>
+			<div class="otherReg">
+				<span>其他注册方式</span>
+				<a href="#"><i></i>微信账号注册</a>
+			</div>
+			<div class="goLogin">已拥有帐户？
+				<a href="login.html">登录 ›</a>
+			</div>
+		</div>
+		<div id="help">
+			<div class="help">
+				<a href="#">使用条件</a>
+				<a href="#">隐私声明</a>
+				<a href="#">帮助</a>
+			</div>
+		</div>
+		<div id="registor-footer">版权所有 © 1996-2017，亚马逊公司或其关联公司</div>
+
+		<script src="js/require.js" data-main="js/main_registor.js" type="text/javascript" defer async="true charset=" utf-8 "></script>
+	</body>
+</html>
